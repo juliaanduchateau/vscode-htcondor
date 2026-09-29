@@ -8,3 +8,6 @@ src/html_files
 *.html
 src/logs/
 *.sub
+
+# ignore apptainer images
+*.sif

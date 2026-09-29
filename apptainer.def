@@ -1,0 +1,10 @@
+BootStrap: docker
+From: node:26.10
+
+
+%post
+  npm install -g vsce
+
+%runscript
+  npm install
+  vsce package

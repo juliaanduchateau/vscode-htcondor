@@ -48,3 +48,41 @@ Initial release of Htcondor for Visual Studio Code
 Open an issue or submit a pull request.
 
 ## License
+
+
+# Building for VS Codium
+
+## Apptainer (optional)
+
+### Build the image
+
+```bash
+apptainer build apptainer.sif apptainer.def
+```
+
+### Compile the extension
+
+```bash
+apptainer run apptainer.sif
+```
+
+## NPM
+
+### Install dependencies
+
+```bash
+npm install
+npm install vsce
+```
+
+### Compile the extension
+
+```bash
+vsce package
+```
+
+## Install the extension
+
+```bash
+flatpak run com.vscodium.codium --install-extension htcondor-3.0.0.vsix
+```
